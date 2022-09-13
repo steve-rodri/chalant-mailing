@@ -1,8 +1,9 @@
-import First from "../First"
+import Prospecting from "../Prospecting"
 
-export const ExampleFirst = () => {
+export const FirstMessage = () => {
   return (
-    <First
+    <Prospecting
+      status="first"
       propertyOwner="Steve"
       locatedAt="Westbury, NY"
       listingPrice="$3000"

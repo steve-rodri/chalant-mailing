@@ -1,5 +1,3 @@
-import DefaultTemplate from "./components/DefaultTemplate"
-
 import {
   PropertyOwner,
   LocatedAt,
@@ -11,17 +9,9 @@ import {
   TotalLoss,
   Text,
   Bold,
-} from "./components/text"
+} from "../text"
 
-export const FirstEmail = (props) => {
-  return (
-    <DefaultTemplate url={props.listingUrl}>
-      <Message {...props} />
-    </DefaultTemplate>
-  )
-}
-
-const Message = (props) => {
+export const FirstMessage = (props) => {
   return (
     <>
       <Text>Hello <PropertyOwner {...props} />,</Text>
@@ -64,4 +54,4 @@ const Message = (props) => {
   )
 }
 
-export default FirstEmail;
+export default FirstMessage;
