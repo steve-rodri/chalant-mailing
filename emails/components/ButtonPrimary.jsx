@@ -1,5 +1,5 @@
 import { MjmlButton } from "mjml-react";
-import { black } from "./theme";
+import { brand } from "./theme";
 import { leadingTight, textBase, borderBase } from "./theme";
 
 const ButtonPrimary = ({ link, uiText }) => {
@@ -7,12 +7,13 @@ const ButtonPrimary = ({ link, uiText }) => {
     <MjmlButton
       lineHeight={leadingTight}
       fontSize={textBase}
-      height={52}
+      height={75}
       padding="0"
-      align="left"
+      align="center"
       href={link}
-      backgroundColor={black}
+      backgroundColor={brand.blue.dark}
       borderRadius={borderBase}
+      width="100%"
     >
       {uiText}
     </MjmlButton>

@@ -7,11 +7,10 @@ export default function Footer() {
       <MjmlColumn>
         <MjmlText
           cssClass="footer"
-          padding="24px 24px 48px"
           fontSize={textSm}
           color={grayDark}
         >
-          © 2022 Mailing&nbsp;&nbsp;·&nbsp;&nbsp;
+          © 2022 Chalant LLC&nbsp;&nbsp;·&nbsp;&nbsp;
           <a href="#" target="_blank">
             Unsubscribe
           </a>

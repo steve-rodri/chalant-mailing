@@ -1,15 +1,22 @@
 import { MjmlSection, MjmlColumn, MjmlImage } from "mjml-react";
+import { space } from "./theme"
 
-const Header = ({ big }) => {
+
+// const logoSymbol = "https://res.cloudinary.com/chalant/image/upload/v1663031659/logos/portrait/original-logo-symbol_crxvhv.png"
+const portraitTransparent = "https://res.cloudinary.com/chalant/image/upload/v1663031659/logos/portrait/transparent-logo_spulk6.png"
+// const landscapeTransparent = "https://res.cloudinary.com/chalant/image/upload/v1663031659/logos/landscape/transparent-logo_dzmki2.png"
+
+const Header = () => {
   return (
-    <MjmlSection padding={big ? "48px 0 40px" : "48px 0 24px"}>
+    <MjmlSection padding={`${space.lg}px 0`}>
       <MjmlColumn>
         <MjmlImage
-          padding="0 24px 0"
-          width={big ? "146px" : "91px"}
-          height={big ? "32px" : "20px"}
-          align="left"
-          src="https://s3.amazonaws.com/lab.campsh.com/mailing-logo%402x.png"
+          src={portraitTransparent}
+          height="123px"
+          width="100px"
+          padding="0"
+          align="center"
+          borderRadius={"50px"}
         />
       </MjmlColumn>
     </MjmlSection>
