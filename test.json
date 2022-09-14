@@ -1,0 +1,29 @@
+{
+  "status": "first",
+  "messageProps": {
+    "propertyOwner": "Steve",
+    "locatedAt": "at 123 Main St, NY",
+    "listing": {
+      "price": "3000",
+      "website": "Craigslist",
+      "url": "https://craigslist.com"
+    },
+    "pastDaysListed": "3",
+    "monthlyRate": "2000",
+    "dailyLoss": "100",
+    "totalLoss": "300"
+  },
+  "subject": "Copy Listing Subject Line",
+  "recipient": {
+    "email": "steve@steverodri.com",
+    "name": "Steve"
+  },
+  "assignee": {
+    "email": "steve@chalant.rentals",
+    "name": "Steve Rodriguez"
+  },
+  "bcc": {
+    "email": "shari@chalant.rentals",
+    "name": "Shari Irving"
+  }
+}

@@ -17,7 +17,7 @@ export const Text = ({ children, ...rest }) => {
 
 export const Bold = ({ children }) => {
   return (
-    <MjmlText style={{ fontWeight: "700" }} lineHeight={leadingRelaxed}>{children}</MjmlText>
+    <MjmlText style={{ fontWeight: "700" }} lineHeight={leadingRelaxed} fontWeight={700}>{children}</MjmlText>
   )
 }
 
@@ -29,15 +29,15 @@ export const LocatedAt = ({ locatedAt }) => {
   return <Text>{locatedAt}</Text>
 }
 
-export const ListingPrice = ({ listingPrice }) => {
-  return <Text>{listingPrice}</Text>
+export const ListingPrice = ({ listing }) => {
+  return <Text>${listing?.price}</Text>
 }
 
-export const ListingWebsite = ({ listingWebsite }) => {
-  return <Text>{listingWebsite}</Text>
+export const ListingWebsite = ({ listing }) => {
+  return <Text>{listing?.website}</Text>
 }
-export const ListingURL = ({ listingUrl }) => {
-  return <Text align="center" padding="0">{listingUrl}</Text>
+export const ListingURL = ({ listing }) => {
+  return <Text align="center" padding="0">{listing?.url}</Text>
 }
 
 export const PastDaysListed = ({ pastDaysListed }) => {
@@ -45,13 +45,13 @@ export const PastDaysListed = ({ pastDaysListed }) => {
 }
 
 export const MonthlyRate = ({ monthlyRate }) => {
-  return <Text>{monthlyRate}</Text>
+  return <Text>${monthlyRate}</Text>
 }
 
 export const DailyLoss = ({ dailyLoss }) => {
-  return <Text>{dailyLoss}</Text>
+  return <Text>${dailyLoss}</Text>
 }
 
 export const TotalLoss = ({ totalLoss }) => {
-  return <Text>{totalLoss}</Text>
+  return <Text>${totalLoss}</Text>
 }

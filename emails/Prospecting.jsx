@@ -3,7 +3,7 @@ import { FirstMessage } from "./components/messages"
 
 export const Prospecting = (props) => {
   return (
-    <DefaultTemplate url={props.listingUrl}>
+    <DefaultTemplate url={props?.listing?.url}>
       <Message {...props} />
     </DefaultTemplate>
   )

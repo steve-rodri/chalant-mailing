@@ -6,9 +6,7 @@ export const FirstMessage = () => {
       status="first"
       propertyOwner="Steve"
       locatedAt="Westbury, NY"
-      listingPrice="$3000"
-      listingWebsite="Craigslist"
-      listingUrl="#"
+      listing={{ price: 3000, website: "Craigslist", url: "#" }}
       pastDaysListed={10}
       monthlyRate={2000}
       dailyLoss={100}

@@ -17,7 +17,7 @@ export const FirstMessage = (props) => {
       <Text>Hello <PropertyOwner {...props} />,</Text>
       <Text>
         I’d like to discuss an important opportunity regarding your property
-        located at <LocatedAt {...props} />. Your property is currently listed
+        located <LocatedAt {...props} />. Your property is currently listed
         for <ListingPrice {...props} /> per month. My company, Chalant, can
         achieve <Bold>2X – 3X</Bold> your rental rate by utilizing your
         property for Corporate Housing. To be more specific, Chalant provides

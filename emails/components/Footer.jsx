@@ -10,10 +10,7 @@ export default function Footer() {
           fontSize={textSm}
           color={grayDark}
         >
-          © 2022 Chalant LLC&nbsp;&nbsp;·&nbsp;&nbsp;
-          <a href="#" target="_blank">
-            Unsubscribe
-          </a>
+          © 2022 Chalant LLC
         </MjmlText>
       </MjmlColumn>
     </MjmlSection>

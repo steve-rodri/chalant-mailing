@@ -7,13 +7,11 @@ const ButtonPrimary = ({ link, uiText }) => {
     <MjmlButton
       lineHeight={leadingTight}
       fontSize={textBase}
-      height={75}
-      padding="0"
+      innerPadding="25px 60px"
       align="center"
       href={link}
       backgroundColor={brand.blue.dark}
       borderRadius={borderBase}
-      width="100%"
     >
       {uiText}
     </MjmlButton>
