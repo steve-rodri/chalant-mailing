@@ -1,10 +1,10 @@
 import { Text, ListingURL } from "./text"
 
-export const ListingReference = ({ url }) => {
+export const ListingReference = ({ listing }) => {
   return (
     <>
       <Text align="center" padding="0">Your Listing: (for Reference)</Text>
-      <ListingURL listingUrl={url} align="center" />
+      <ListingURL listing={listing} align="center" />
     </>
   )
 }

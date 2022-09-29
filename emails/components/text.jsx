@@ -41,7 +41,7 @@ export const ListingWebsite = ({ listing }) => {
   return <Text>{listing?.website}</Text>
 }
 export const ListingURL = ({ listing }) => {
-  return <Text align="center" padding="0">{listing?.url}</Text>
+  return <Text align="center" padding="0"><a href={listing?.url || "#"}>{listing?.url}</a></Text>
 }
 
 export const PastDaysListed = ({ pastDaysListed }) => {

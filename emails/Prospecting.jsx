@@ -3,7 +3,7 @@ import { FirstMessage, SecondMessage, ThirdMessage, FourthMessage } from "./comp
 
 export const Prospecting = (props) => {
   return (
-    <DefaultTemplate url={props?.listing?.url}>
+    <DefaultTemplate listing={props?.listing}>
       <Message {...props} />
     </DefaultTemplate>
   )
