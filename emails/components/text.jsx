@@ -1,6 +1,10 @@
 import { MjmlText } from "mjml-react";
 import { leadingRelaxed, textBase, space } from "./theme";
 
+const numberWithCommas = (x) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 export const Text = ({ children, ...rest }) => {
   return (
     <MjmlText
@@ -30,7 +34,7 @@ export const LocatedAt = ({ locatedAt }) => {
 }
 
 export const ListingPrice = ({ listing }) => {
-  return <Text>${listing?.price}</Text>
+  return <Text>${numberWithCommas(listing?.price)}</Text>
 }
 
 export const ListingWebsite = ({ listing }) => {
@@ -45,13 +49,13 @@ export const PastDaysListed = ({ pastDaysListed }) => {
 }
 
 export const MonthlyRate = ({ monthlyRate }) => {
-  return <Text>${monthlyRate}</Text>
+  return <Text>${numberWithCommas(monthlyRate)}</Text>
 }
 
 export const DailyLoss = ({ dailyLoss }) => {
-  return <Text>${dailyLoss}</Text>
+  return <Text>${numberWithCommas(dailyLoss)}</Text>
 }
 
 export const TotalLoss = ({ totalLoss }) => {
-  return <Text>${totalLoss}</Text>
+  return <Text>${numberWithCommas(totalLoss)}</Text>
 }
