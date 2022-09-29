@@ -7,7 +7,7 @@ export const FirstMessage = () => {
       propertyOwner="Steve"
       locatedAt="Westbury, NY"
       listing={{ price: 3000, website: "Craigslist", url: "#" }}
-      pastDaysListed={10}
+      pastDaysListed="10 days"
       monthlyRate={2000}
       dailyLoss={100}
       totalLoss={1000}
