@@ -18,9 +18,9 @@ export const FirstMessage = (props) => {
       <Text>
         I’d like to discuss an important opportunity regarding your property
         located <LocatedAt {...props} />. Your property is currently listed
-        for <ListingPrice {...props} /> per month. My company, CHALANT, can
+        for <ListingPrice {...props} /> per month. My company, Chalant, can
         achieve <Bold>2X – 3X</Bold> your rental rate by utilizing your
-        property for Corporate Housing. To be more specific, CHALANT provides
+        property for Corporate Housing. To be more specific, Chalant provides
         housing to business professionals, travel nurses, and corporate
         relocation providers that are willing to pay more money than your
         current rental rate.
