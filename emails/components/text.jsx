@@ -42,14 +42,12 @@ export const ListingWebsite = ({ listing }) => {
 }
 export const ListingURL = ({ listing }) => {
   return (
-    <Text
-      align="right"
-      padding="0"
+    <MjmlText
       fontSize={textSm}
       color={grayDark}
     >
       <a href={listing?.url || "#"} style={{ color: grayDark }}>Your Listing</a>
-    </Text>
+    </MjmlText>
   )
 }
 

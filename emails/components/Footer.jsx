@@ -13,8 +13,6 @@ export default function Footer(props) {
         >
           © 2022 Chalant LLC
         </MjmlText>
-      </MjmlColumn>
-      <MjmlColumn>
         <ListingURL {...props} />
       </MjmlColumn>
     </MjmlSection>
