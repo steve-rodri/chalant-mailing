@@ -1,5 +1,5 @@
 import { MjmlText } from "mjml-react";
-import { leadingRelaxed, textBase, space } from "./theme";
+import { leadingRelaxed, textBase, textSm, grayDark, space } from "./theme";
 
 const numberWithCommas = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -41,7 +41,16 @@ export const ListingWebsite = ({ listing }) => {
   return <Text>{listing?.website}</Text>
 }
 export const ListingURL = ({ listing }) => {
-  return <Text align="center" padding="0"><a href={listing?.url || "#"}>{listing?.url}</a></Text>
+  return (
+    <Text
+      align="right"
+      padding="0"
+      fontSize={textSm}
+      color={grayDark}
+    >
+      <a href={listing?.url || "#"} style={{ color: grayDark }}>Your Listing</a>
+    </Text>
+  )
 }
 
 export const PastDaysListed = ({ pastDaysListed }) => {

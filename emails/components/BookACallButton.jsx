@@ -1,4 +1,4 @@
-import ButtonPrimary from "./ButtonPrimary";
+import { ButtonPrimary } from "./buttons";
 
 const getFirstName = (name) => {
   if (!name) return;
