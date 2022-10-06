@@ -30,6 +30,7 @@ export const DefaultTemplate = ({ children, ...rest }) => {
             <Spacer height={space.lg} />
             <Spacer height={space.lg} />
             <Signature {...rest} />
+            <Spacer height={space.sm} />
           </Column>
         </Section>
         <Footer />
