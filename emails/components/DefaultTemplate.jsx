@@ -1,9 +1,9 @@
 import Head from "./Head";
 import Header from "./Header";
 import Footer from "./Footer";
-import ButtonPrimary from "./ButtonPrimary";
 import ListingReference from "./ListingReference"
-import { SocialIcons } from "./SocialIcons"
+import BookACallButton from "./BookACallButton"
+import Signature from "./Signature"
 import { brand, space } from "./theme"
 import {
   Mjml,
@@ -23,10 +23,13 @@ export const DefaultTemplate = ({ children, ...rest }) => {
           <Column>
             {children}
             <Spacer height={space.lg} />
-            <ButtonPrimary link="https://linktr.ee/chalant.rentals" uiText="Get In Touch" />
+            <BookACallButton {...rest} />
             <Spacer height={space.lg} />
-            <SocialIcons />
             <ListingReference {...rest} />
+            <Spacer height={space.lg} />
+            <Spacer height={space.lg} />
+            <Spacer height={space.lg} />
+            <Signature {...rest} />
           </Column>
         </Section>
         <Footer />
@@ -34,5 +37,6 @@ export const DefaultTemplate = ({ children, ...rest }) => {
     </Mjml>
   );
 };
+
 
 export default DefaultTemplate
