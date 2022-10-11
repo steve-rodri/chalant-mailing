@@ -9,9 +9,9 @@ export const FirstMessage = () => {
       locatedAt="at 70 Greybarn Lane, Amityville, NY"
       listing={{ price: 4000, website: "Craigslist", url: "https://steverodri.com" }}
       pastDaysListed="13 days"
-      monthlyRate={2000}
-      dailyLoss={100}
-      totalLoss={1300}
+      monthlyRate={2000.23452345}
+      dailyLoss={100.834235}
+      totalLoss={1300.745145}
     />
   )
 }
