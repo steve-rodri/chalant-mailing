@@ -1,10 +1,9 @@
 import Head from "./Head";
-import Header from "./Header";
 import Footer from "./Footer";
-import BookACallButton from "./BookACallButton"
-import ViewBrochureButton from "./ViewBrochureButton"
-import Signature from "./Signature"
-import { brand, space } from "./theme"
+import BookACallButton from "./BookACallButton";
+import ViewBrochureButton from "./ViewBrochureButton";
+import Signature from "./Signature";
+import { brand, space } from "./theme";
 import {
   Mjml,
   MjmlBody as Body,
@@ -17,8 +16,7 @@ export const DefaultTemplate = ({ children, ...rest }) => {
   return (
     <Mjml>
       <Head />
-      <Body width={600} backgroundColor={brand.blue.light}>
-        <Header />
+      <Body width={600}>
         <Section cssClass="smooth" padding={`0 ${space.md}px`}>
           <Column>
             {children}
@@ -37,5 +35,4 @@ export const DefaultTemplate = ({ children, ...rest }) => {
   );
 };
 
-
-export default DefaultTemplate
+export default DefaultTemplate;
